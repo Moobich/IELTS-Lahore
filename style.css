@@ -122,6 +122,8 @@ body {
 }
 
 .hero-overlay {
+    /* background: rgba(0, 0, 0, 0.6); */
+    /* background-image: linear-gradient(#530000, #340909); */
     height: 100vh;
     width: 100%;
     /* position: absolute;
@@ -129,13 +131,20 @@ body {
     left: 0;
     right: 0;
     bottom: 0; */
-    background: rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.hero-overlay img {
+    position: fixed;
+    z-index: -1;
+}
+
 .hero-content {
+    border-radius: 24px;
+    background-color: #3a3434d9;
+    border: 1px solid black;
     max-width: 100%;
     padding: 50px 20px;
 }
@@ -258,7 +267,6 @@ body {
 
 /* About Section */
 .about {
-    /* padding: 390px 0; */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -268,11 +276,6 @@ body {
 
 .about-overlay {
     height: auto;
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
     background: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
@@ -390,7 +393,7 @@ body {
 /* Contact Section */
 .contact {
     padding: 100px 0;
-    background: #2c3e50;
+    background: #2c3e50d6;
     color: white;
     text-align: center;
 }
@@ -1040,6 +1043,7 @@ body {
     padding: 100px 0;
     background: #fff;
 }
+
 .our-story .container .story-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1047,15 +1051,15 @@ body {
     align-items: center;
 }
 
-.our-story .container .story-content .story-text{
-  opacity: 0;
-  transform: translateX(-100px);
-  transition: all 0.6s ease-out;
+.our-story .container .story-content .story-text {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.6s ease-out;
 }
 
 .our-story .container .story-content .story-text.animate {
-  opacity: 1;
-  transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .story-content {
@@ -1136,11 +1140,12 @@ body {
 
 /* Tutor Profile Section */
 .tutor-profile {
-    /* padding: 100px 0; */
+    padding: 100px 0;
     background: #f8f9fa;
 }
 
 .tutor-profile h2 {
+    padding: 40px 0 0 0;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
@@ -1308,7 +1313,7 @@ body {
 
 /* Success Stats Section */
 .success-stats {
-    padding: 100px 0;
+    padding: 50px 0;
     background: #2c3e50;
     color: white;
 }
@@ -1326,6 +1331,8 @@ body {
 }
 
 .stat-card {
+    border-radius: 20px;
+    background-color: #625e5e36;
     text-align: center;
     padding: 2rem;
 }
@@ -1382,6 +1389,7 @@ body {
     .story-content {
         grid-template-columns: 1fr;
     }
+
     .our-story .container .story-content {
         grid-template-columns: 1fr;
     }
@@ -1393,10 +1401,10 @@ body {
     .mission-vision-grid {
         grid-template-columns: 1fr;
     }
-    
-.tutor-image img {
-    width: 20%;
-}
+
+    .tutor-image img {
+        width: 20%;
+    }
 
     .process-step {
         flex-direction: column;
