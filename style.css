@@ -144,8 +144,7 @@ body {
 .hero-content {
     border-radius: 24px;
     background-color: #3a3434d9;
-    border: 1px solid black;
-    max-width: 100%;
+    max-width: 94%;
     padding: 50px 20px;
 }
 
@@ -334,6 +333,9 @@ body {
     .logoimg img {
         width: 20vw;
     }
+    .hero-content {
+        width: 90%;
+    }
 }
 
 
@@ -392,14 +394,14 @@ body {
 
 /* Contact Section */
 .contact {
-    padding: 100px 0;
+    padding: 50px 0;
     background: #2c3e50d6;
     color: white;
     text-align: center;
 }
 
 .contact h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -787,7 +789,7 @@ body {
 
 /* One-on-One Methodology Page Specific Styles */
 .methodology-overview {
-    padding: 100px 0;
+    padding: 50px 0;
     background: #fff;
 }
 
@@ -841,7 +843,7 @@ body {
 }
 
 .process-overlay .container h2 {
-    font-size: -webkit-xxx-large;
+    font-size: -webkit-xx-large;
     color: skyblue;
     padding: 41px 0px 4px 0px;
     text-align: -webkit-center;
@@ -1264,6 +1266,10 @@ body {
     color: skyblue;
     font-size: xx-large;
     margin-bottom: 10px;
+    text-align: center;
+}
+..methodology-overview .container h2 {
+    text-align: center;
 }
 
 .choose-grid {
