@@ -142,7 +142,7 @@ body {
 }
 
 .hero-content {
-    border-radius: 24px;
+    border-radius: 5px;
     background-color: #3a3434d9;
     max-width: 94%;
     padding: 50px 20px;
@@ -1357,6 +1357,26 @@ body {
     color: #ccc;
 }
 
+.phone-call-button {
+    position: fixed;
+    left: 2%;
+    bottom: 1%;
+    display: none;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+.phone-call-button:hover {
+    transform: scale(1.1);
+}
+
+.phone-call-button img {
+    opacity: 0.75;
+    width: 60px; 
+    height: 60px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hamburger {
@@ -1440,6 +1460,9 @@ body {
     .hero-buttons .btn {
         width: 200px;
     }
+    .phone-call-button {
+        display: flex;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1476,6 +1499,10 @@ body {
         width: 50px;
         height: 50px;
         font-size: 1.2rem;
+    }
+
+    .phone-call-button {
+        display: flex;
     }
 }
 

@@ -352,3 +352,17 @@ if ('serviceWorker' in navigator) {
             });
     });
 }
+
+
+window.onload = function() {
+    const phoneCallButton = document.getElementById("phoneCallButton");
+    phoneCallButton.addEventListener("click", function() {
+        const phoneNumber = '+923246078999';
+
+        if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone/i)) {
+            window.location.href = `tel:${phoneNumber}`;
+        } else {
+            alert('Please use this feature on a mobile device to dial the number directly.');
+        }
+    });
+};
