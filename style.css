@@ -333,6 +333,7 @@ body {
     .logoimg img {
         width: 20vw;
     }
+
     .hero-content {
         width: 90%;
     }
@@ -1268,7 +1269,8 @@ body {
     margin-bottom: 10px;
     text-align: center;
 }
-..methodology-overview .container h2 {
+
+.methodology-overview .container h2 {
     text-align: center;
 }
 
