@@ -1353,8 +1353,8 @@ body {
 
 .phone-call-button {
     position: fixed;
-    left: 2%;
-    bottom: 1%;
+    left: 18px;
+    bottom: 14px;
     display: none;
     object-fit: cover;
     transition: transform 0.3s ease;
