@@ -122,15 +122,9 @@ body {
 }
 
 .hero-overlay {
-    /* background: rgba(0, 0, 0, 0.6); */
-    /* background-image: linear-gradient(#530000, #340909); */
+    /* flex-basis: fit-content; */
     height: 100vh;
     width: 100%;
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,7 +138,7 @@ body {
 .hero-content {
     border-radius: 5px;
     background-color: #3a3434d9;
-    max-width: 94%;
+    width: 85%;
     padding: 50px 20px;
 }
 
@@ -1373,8 +1367,8 @@ body {
 
 .phone-call-button img {
     opacity: 0.75;
-    width: 60px; 
-    height: 60px;
+    width: 50px; 
+    height: 50px;
 }
 
 /* Responsive Design */
