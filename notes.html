@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS Exam Preparation | IELTS Notes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .container1 {
+      padding: 0.5%;
+      max-width: 100vw;
+      margin: 0 auto;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .wholeNotes {
+      position: relative;
+      top: 10vh;
+    }
+
+    .headertext {
+      height: 30vh;
+      background-image: url('Images/library.jpg');
+      padding: 30px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-content-notes {
+      height: auto;
+      position: relative;
+      top: 10%;
+      width: 85%;
+      align-self: center;
+      justify-self: center;
+      background-color: rgba(70, 67, 67, 0.805);
+      border-radius: 7px;
+      padding: 2%;
+
+    }
+
+    .headertext h1 {
+      color: rgb(255, 255, 255);
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .headertext p {
+      color: white;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: black;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .tabs {
+      display: flex;
+      background: #34495e;
+      border-bottom: 3px solid #ffd700;
+    }
+
+    .tab {
+      flex: 1;
+      text-align: center;
+      padding: 18px 10px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      color: #ecf0f1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid rgba(161, 155, 155, 0.575);
+    }
+
+    .tab i {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+
+    }
+
+    .tab.active {
+      position: relative;
+      background: #cd1111;
+      color: #ffffff;
+      top: -7px;
+      border-color: rgba(255, 255, 255, 0.647);
+    }
+
+    .tab:not(.active) {
+
+      background: #4a6491;
+      color: rgba(219, 215, 215, 0.387);
+    }
+
+    .tab:hover:not(.active) {
+      border-color: white;
+      background: #5f88cf86;
+      color: rgba(255, 252, 252, 0.866);
+    }
+
+    .content {
+      padding: 40px;
+      min-height: 600px;
+    }
+
+    .page {
+      display: none;
+    }
+
+    .page.active {
+      display: block;
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      color: #2c3e50;
+      font-size: 2.2rem;
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 3px solid #ffd700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h3 {
+      color: #2980b9;
+      font-size: 1.6rem;
+      margin: 25px 0 15px;
+      padding-left: 10px;
+      border-left: 4px solid #ffd700;
+    }
+
+    h4 {
+      color: #3498db;
+      font-size: 1.3rem;
+      margin: 20px 0 10px;
+    }
+
+    p {
+      /* margin-bottom: 15px; */
+      font-size: 1.1rem;
+    }
+
+    .card {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 25px;
+      margin: 25px 0;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      border-left: 4px solid;
+    }
+
+    .card.reading {
+      border-left-color: #e74c3c;
+    }
+
+    .card.writing {
+      border-left-color: #27ae60;
+    }
+
+    .card.listening {
+      border-left-color: #9b59b6;
+    }
+
+    .card.speaking {
+      border-left-color: #f39c12;
+    }
+
+    .example {
+      background: #e8f4f8;
+      border-left: 4px solid #3498db;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .tip-box {
+      background: #fff8e1;
+      border-left: 4px solid #ffd700;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .tip-box i {
+      color: #ff9800;
+      margin-right: 10px;
+    }
+
+    .question-types {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin: 25px 0;
+    }
+
+    .question-type {
+      background: #f1f8e9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .question-type:hover {
+      transform: translateY(-5px);
+    }
+
+    .question-type h4 {
+      color: #2e7d32;
+    }
+
+    .structure {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    .band-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 25px 0;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .band-table th {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      text-align: left;
+    }
+
+    .band-table td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .band-table tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    .band-table tr:hover {
+      background: #f1f8ff;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #3498db;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px 5px;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      background: #2980b9;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn.primary {
+      background: #ffd700;
+      color: #2c3e50;
+    }
+
+    .btn.danger {
+      background: #e74c3c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #2c3e50;
+      color: #ecf0f1;
+      font-size: 1rem;
+    }
+
+    .resources {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .resource-card {
+      flex: 1;
+      min-width: 250px;
+      background: white;
+      border-radius: 10px;
+      padding: 2% 4%;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      border: 1px solid #eee;
+      transition: all 0.3s ease;
+    }
+
+    .resource-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .resource-card h4 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+
+    .countdown {
+      background: #34495e;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    .part-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .part-card {
+      flex: 1;
+      min-width: 300px;
+      background: #f0f7ff;
+      border-radius: 10px;
+      padding: 20px;
+      border-left: 4px solid #3498db;
+    }
+
+    .audio-sample {
+      background: #e1f5fe;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 15px 0;
+      text-align: center;
+    }
+
+    .audio-controls {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .audio-btn {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #3498db;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: all 0.3s;
+    }
+
+    .audio-btn:hover {
+      background: #2980b9;
+      transform: scale(1.1);
+    }
+
+    .topic-list {
+      columns: 2;
+      column-gap: 30px;
+    }
+
+    .topic-list li {
+      margin-bottom: 10px;
+      break-inside: avoid;
+    }
+
+    .speaking-tips {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin: 25px 0;
+    }
+
+    .speaking-tip {
+      background: #fff3e0;
+      padding: 20px;
+      border-radius: 8px;
+      border-top: 4px solid #f39c12;
+    }
+
+
+    @media (max-width: 992px) {
+      .tabs {
+        flex-wrap: wrap;
+      }
+
+      .tab {
+        flex: 1 0 50%;
+        padding: 15px 5px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      .topic-list {
+        columns: 1;
+      }
+
+      .hero-content-notes {
+        height: auto;
+        top: 20%;
+        width: 85vw;
+      }
+
+      .hero-content-notes h1 {
+        font-size: x-large;
+      }
+
+      .hero-content-notes p {
+        font-size: large;
+        padding-bottom: 1%;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <figure class="logoimg">
+            <a href="index.html"><img src="Images\IELTS (2).png" alt="my img"> </a>
+          </figure>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="ielts-learning.html" class="nav-link">IELTS Learning</a></li>
+          <li><a href="one-on-one-methodology.html" class="nav-link">One-on-One Teaching</a></li>
+          <li><a href="about-us.html" class="nav-link">About Us</a></li>
+          <li><a href="notes.html" class="nav-link active">Notes</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="wholeNotes">
+    <div class="headertext">
+      <div class="hero-content-notes">
+        <h1>IELTS Exam Preparation</h1>
+        <p class="subtitle">Comprehensive IELTS Notes for All IELTS Modules with Strategies, Examples, and Band-Scoring
+          Tips</p>
+      </div>
+    </div>
+
+    <div class="container1">
+      <div class="tabs">
+        <div class="tab active" data-tab="reading">
+          <i class="fas fa-book-open"></i>
+          Reading
+        </div>
+        <div class="tab" data-tab="writing">
+          <i class="fas fa-pencil-alt"></i>
+          Writing
+        </div>
+        <div class="tab" data-tab="listening">
+          <i class="fas fa-headphones"></i>
+          Listening
+        </div>
+        <div class="tab" data-tab="speaking">
+          <i class="fas fa-microphone"></i>
+          Speaking
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- Reading Module Content -->
+        <div class="page active" id="reading-page">
+          <h2><i class="fas fa-book-open"></i> IELTS Reading Module</h2>
+
+          <div class="card reading">
+            <h3>Exam Structure Overview</h3>
+            <p>The IELTS Reading test consists of 40 questions to be answered in 60 minutes. The test has three sections
+              with texts of increasing difficulty:</p>
+
+            <div class="structure">
+              <p><strong>Section 1:</strong> 2-3 short factual texts (e.g., advertisements, notices)</p>
+              <p><strong>Section 2:</strong> 2 workplace-related texts (e.g., job descriptions, training manuals)</p>
+              <p><strong>Section 3:</strong> 1 complex academic text (e.g., research papers, historical analyses)</p>
+            </div>
+
+            <div class="tip-box">
+              <i class="fas fa-lightbulb"></i>
+              <strong>Pro Tip:</strong> You don't get extra time to transfer answers, so write them directly on the
+              answer
+              sheet.
+            </div>
+          </div>
+
+          <h3>Question Types & Strategies</h3>
+
+          <div class="question-types">
+            <div class="question-type">
+              <h4>Multiple Choice</h4>
+              <p>Choose the correct answer from options A, B, C, or D.</p>
+              <div class="example">
+                <p><strong>Text:</strong> "The dodo, a flightless bird native to Mauritius, became extinct in the 17th
+                  century due to human predation and invasive species."</p>
+                <p><strong>Question:</strong> What caused the dodo's extinction?</p>
+                <p>a) Climate change<br>
+                  b) Human predation and invasive species<br>
+                  c) Habitat loss</p>
+              </div>
+              <div class="tip-box">
+                <i class="fas fa-tips"></i>
+                Eliminate distractors and focus on qualifiers like "primary" or "mainly"
+              </div>
+            </div>
+
+            <div class="question-type">
+              <h4>True/False/Not Given</h4>
+              <p>Determine if statements agree with, contradict, or are not mentioned in the text.</p>
+              <div class="example">
+                <p><strong>Text:</strong> "Renewable energy accounts for 30% of Germany's electricity. The government
+                  aims
+                  to reach 50% by 2030."</p>
+                <p><strong>Statement:</strong> Renewable energy currently exceeds 50% in Germany.</p>
+                <p><strong>Answer:</strong> False (30% is less than 50%)</p>
+              </div>
+              <div class="tip-box">
+                <i class="fas fa-tips"></i>
+                "Not Given" means there's no information - don't infer based on general knowledge
+              </div>
+            </div>
+
+            <div class="question-type">
+              <h4>Matching Headings</h4>
+              <p>Match paragraph headings to paragraphs in the text.</p>
+              <div class="example">
+                <p><strong>Paragraph:</strong> "The invention of the printing press in 1440 revolutionized information
+                  dissemination, enabling mass production of books."</p>
+                <p><strong>Headings:</strong><br>
+                  a) Origins of Digital Media<br>
+                  b) Impact of a Technological Breakthrough<br>
+                  c) Early Bookbinding Techniques</p>
+                <p><strong>Answer:</strong> b</p>
+              </div>
+              <div class="tip-box">
+                <i class="fas fa-tips"></i>
+                Focus on topic sentences and ignore examples/details
+              </div>
+            </div>
+
+            <div class="question-type">
+              <h4>Summary Completion</h4>
+              <p>Fill gaps in a summary with words from the text.</p>
+              <div class="example">
+                <p><strong>Text:</strong> "Bamboo, the fastest-growing plant, can expand up to 91 cm daily."</p>
+                <p><strong>Summary:</strong> Bamboo can grow as much as ______ per day.</p>
+                <p><strong>Answer:</strong> 91 cm</p>
+              </div>
+              <div class="tip-box">
+                <i class="fas fa-tips"></i>
+                Strictly follow word limits and check grammar
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Time Management Strategy</h3>
+            <div class="structure">
+              <p><strong>Preview (2 mins):</strong> Scan headings, diagrams, and topic sentences</p>
+              <p><strong>First Pass (12 mins/section):</strong> Answer "direct" questions (Sentence Completion,
+                Short-Answer)</p>
+              <p><strong>Second Pass (10 mins/section):</strong> Tackle inferential questions (T/F/NG, Matching
+                Headings)
+              </p>
+              <p><strong>Review (3 mins):</strong> Verify unanswered questions; check spelling/word count</p>
+            </div>
+
+            <div class="tip-box">
+              <i class="fas fa-stopwatch"></i>
+              <strong>Band 9 Hack:</strong> Practice with a timer to build speed without sacrificing accuracy
+            </div>
+          </div>
+
+          <h3>Band Score Improvement Tips</h3>
+          <table class="band-table">
+            <thead>
+              <tr>
+                <th>Target Band</th>
+                <th>Correct Answers</th>
+                <th>Strategy Focus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Band 6</td>
+                <td>23-26/40</td>
+                <td>Master scanning techniques for factual questions</td>
+              </tr>
+              <tr>
+                <td>Band 7</td>
+                <td>30-32/40</td>
+                <td>Develop paraphrasing recognition skills</td>
+              </tr>
+              <tr>
+                <td>Band 8</td>
+                <td>35-36/40</td>
+                <td>Improve inference and complex question handling</td>
+              </tr>
+              <tr>
+                <td>Band 9</td>
+                <td>37-40/40</td>
+                <td>Perfect time management and error elimination</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="resources">
+            <div class="resource-card">
+              <h4>Recommended Practice Materials</h4>
+              <ul>
+                <li>Cambridge IELTS Books 10-18</li>
+                <li>Official IELTS Practice Tests</li>
+                <li>British Council Reading Exercises</li>
+                <li>IELTS Liz Reading Lessons</li>
+              </ul>
+            </div>
+
+            <div class="resource-card">
+              <h4>Reading Sources for Practice</h4>
+              <ul>
+                <li>National Geographic</li>
+                <li>The Economist</li>
+                <li>New Scientist</li>
+                <li>History Today</li>
+                <li>Scientific American</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="countdown">
+            <p>Your IELTS success journey starts now! Consistent practice is key to improvement.</p>
+          </div>
+        </div>
+
+        <!-- Writing Module Content -->
+        <div class="page" id="writing-page">
+          <h2><i class="fas fa-pencil-alt"></i> IELTS Writing Module</h2>
+
+          <div class="card writing">
+            <h3>Module Structure & Scoring</h3>
+            <p><strong>Duration:</strong> 60 minutes (Task 1: 20 mins, Task 2: 40 mins)</p>
+
+            <div class="structure">
+              <h4>Academic Writing</h4>
+              <p><strong>Task 1:</strong> Describe visual information (graph, chart, diagram, process)</p>
+              <p><strong>Task 2:</strong> Essay response to a point of view, argument, or problem</p>
+
+              <h4>General Training Writing</h4>
+              <p><strong>Task 1:</strong> Write a letter (formal, semi-formal, or informal)</p>
+              <p><strong>Task 2:</strong> Essay response (similar to Academic)</p>
+            </div>
+
+            <div class="tip-box">
+              <i class="fas fa-lightbulb"></i>
+              <strong>Scoring Criteria:</strong> Task Achievement/Response (25%), Coherence & Cohesion (25%), Lexical
+              Resource (25%), Grammatical Range & Accuracy (25%)
+            </div>
+          </div>
+
+          <h3>Task 1: Academic (Visual Information)</h3>
+          <div class="card">
+            <h4>4-Paragraph Structure</h4>
+            <div class="structure">
+              <p><strong>1. Introduction:</strong> Paraphrase the question</p>
+              <div class="example">
+                <p><strong>Question:</strong> "The graph below shows electricity production by source in France
+                  (2000-2020)."</p>
+                <p><strong>Paraphrase:</strong> "The line graph illustrates how electricity was generated from different
+                  sources in France between 2000 and 2020."</p>
+              </div>
+
+              <p><strong>2. Overview:</strong> Highlight key trends without specific data</p>
+              <div class="example">
+                <p>"Overall, nuclear power dominated production, while renewables saw gradual growth. Coal usage
+                  plummeted
+                  after 2010."</p>
+              </div>
+
+              <p><strong>3. Body Paragraph 1:</strong> Detail significant features (highest/lowest values)</p>
+              <div class="example">
+                <p>"In 2000, nuclear energy accounted for 75% of output, peaking at 80% in 2015. Conversely, coal began
+                  at
+                  20% but dropped to 5% by 2020."</p>
+              </div>
+
+              <p><strong>4. Body Paragraph 2:</strong> Compare/contrast remaining information</p>
+              <div class="example">
+                <p>"Renewables started at 5%, doubling to 10% in 2020. Hydropower remained stable at 10% throughout."
+                </p>
+              </div>
+            </div>
+
+            <div class="tip-box">
+              <i class="fas fa-tips"></i>
+              Use data brackets for figures: "Coal consumption halved (from 20% to 10%) by 2010."
+            </div>
+          </div>
+
+          <h3>Task 1: General Training (Letter Writing)</h3>
+          <div class="card">
+            <h4>Letter Types & Structure</h4>
+            <div class="structure">
+              <p><strong>Formal Letters:</strong> (Complaints, applications) - "Dear Sir/Madam... Yours faithfully"</p>
+              <p><strong>Semi-formal:</strong> (Landlords, colleagues) - "Dear Mr. Smith... Yours sincerely"</p>
+              <p><strong>Informal:</strong> (Friends, family) - "Dear John... Best regards"</p>
+            </div>
+
+            <h4>4-Paragraph Structure</h4>
+            <div class="structure">
+              <p><strong>1. Purpose:</strong> State why you're writing</p>
+              <p><strong>2. Detail 1:</strong> Explain situation/problem</p>
+              <p><strong>3. Detail 2:</strong> Request action/suggest solution</p>
+              <p><strong>4. Closing:</strong> Polite conclusion</p>
+            </div>
+
+            <div class="example">
+              <p><strong>Formal Complaint Example:</strong></p>
+              <p>"Dear Manager,<br>
+                I am writing regarding the faulty refrigerator delivered to my apartment (Order #123) on 10 May. Despite
+                multiple repairs, it remains unusable. I request a full refund or replacement within seven days.<br>
+                Yours faithfully,<br>
+                John Doe"</p>
+            </div>
+          </div>
+
+          <h3>Task 2: Essay Writing</h3>
+          <div class="card">
+            <h4>Essay Types & Structures</h4>
+            <table class="band-table">
+              <thead>
+                <tr>
+                  <th>Essay Type</th>
+                  <th>Question Clue</th>
+                  <th>Structure</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Opinion</td>
+                  <td>"To what extent do you agree?"</td>
+                  <td>Intro → Body 1 (Agree) → Body 2 (Agree) → Conclusion</td>
+                </tr>
+                <tr>
+                  <td>Discussion</td>
+                  <td>"Discuss both views"</td>
+                  <td>Intro → Body 1 (View 1) → Body 2 (View 2) → Opinion → Conclusion</td>
+                </tr>
+                <tr>
+                  <td>Problem/Solution</td>
+                  <td>"What problems? Suggest solutions"</td>
+                  <td>Intro → Problems → Solutions → Conclusion</td>
+                </tr>
+                <tr>
+                  <td>Advantages/Disadvantages</td>
+                  <td>"Do benefits outweigh drawbacks?"</td>
+                  <td>Intro → Pros → Cons → Conclusion</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h4>PEEL Paragraph Structure</h4>
+            <div class="structure">
+              <p><strong>Point:</strong> Clear topic sentence</p>
+              <p><strong>Explain:</strong> Expand on your point</p>
+              <p><strong>Example:</strong> Provide evidence or illustration</p>
+              <p><strong>Link:</strong> Connect back to main argument</p>
+            </div>
+
+            <div class="example">
+              <p><strong>Example Paragraph:</strong></p>
+              <p>"Technology enables instant communication across distances. Platforms like Zoom allow families
+                separated
+                by migration to interact daily. A 2023 Pew Research study showed 70% of immigrants feel emotionally
+                closer
+                to relatives due to video calls. Thus, digital tools bridge physical gaps."</p>
+            </div>
+          </div>
+
+          <h3>Band 9 Vocabulary & Grammar</h3>
+          <div class="card">
+            <h4>Upgrade Your Language</h4>
+            <div class="structure">
+              <p><strong>Basic → Advanced:</strong></p>
+              <p>"Many people think" → <strong>"It is widely contended"</strong></p>
+              <p>"Important" → <strong>"Crucial/Paramount"</strong></p>
+              <p>"Bad" → <strong>"Detrimental/Deleterious"</strong></p>
+              <p>"Good" → <strong>"Beneficial/Salutary"</strong></p>
+            </div>
+
+            <h4>Complex Sentence Structures</h4>
+            <div class="structure">
+              <p><strong>Relative Clauses:</strong> "Renewable energy, which is sustainable, reduces pollution."</p>
+              <p><strong>Conditionals:</strong> "Unless governments invest in infrastructure, traffic congestion will
+                worsen."</p>
+              <p><strong>Passive Voice:</strong> "Emissions are projected to decline by 2030."</p>
+              <p><strong>Cleft Sentences:</strong> "What societies need is equitable education access."</p>
+            </div>
+
+            <div class="tip-box">
+              <i class="fas fa-tips"></i>
+              Use academic collocations: <em>tackle climate change, bridge the gap, fuel economic growth, compound the
+                problem</em>
+            </div>
+          </div>
+
+          <h3>Time Management System</h3>
+          <table class="band-table">
+            <thead>
+              <tr>
+                <th>Task</th>
+                <th>Time</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="3">Task 2 (40 mins)</td>
+                <td>5 mins</td>
+                <td>Plan: Brainstorm ideas + outline structure</td>
+              </tr>
+              <tr>
+                <td>30 mins</td>
+                <td>Write: Stick to plan; use PEEL paragraphs</td>
+              </tr>
+              <tr>
+                <td>5 mins</td>
+                <td>Review: Check grammar, spelling, task response</td>
+              </tr>
+              <tr>
+                <td rowspan="3">Task 1 (20 mins)</td>
+                <td>3 mins</td>
+                <td>Plan: Identify key trends (AC) / letter purpose (GT)</td>
+              </tr>
+              <tr>
+                <td>15 mins</td>
+                <td>Write: Follow 4-paragraph structure</td>
+              </tr>
+              <tr>
+                <td>2 mins</td>
+                <td>Review: Data accuracy (AC) / tone consistency (GT)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="resources">
+            <div class="resource-card">
+              <h4>Writing Practice Resources</h4>
+              <ul>
+                <li>Cambridge IELTS Books 10-18</li>
+                <li>IELTS Liz Writing Task 1 & 2</li>
+                <li>IELTS Simon Writing Examples</li>
+                <li>British Council Writing Exercises</li>
+              </ul>
+            </div>
+
+            <div class="resource-card">
+              <h4>Vocabulary Builders</h4>
+              <ul>
+                <li>Academic Word List (AWL)</li>
+                <li>IELTS Vocabulary Booster</li>
+                <li>Collocations in Use</li>
+                <li>Academic Phrasebank</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="countdown">
+            <p>Remember: "Task response is king. A simple, error-free essay answering ALL parts beats a complex but
+              irrelevant one." - IELTS Examiner</p>
+          </div>
+        </div>
+
+        <!-- Listening Module Content -->
+        <div class="page" id="listening-page">
+          <h2><i class="fas fa-headphones"></i> IELTS Listening Module</h2>
+
+          <div class="card listening">
+            <h3>Exam Structure Overview</h3>
+            <p>The IELTS Listening test consists of 40 questions to be answered in 30 minutes, plus 10 minutes to
+              transfer
+              answers. The test has four sections:</p>
+
+            <div class="part-container">
+              <div class="part-card">
+                <h4>Section 1: Social Context</h4>
+                <p>A conversation between two people in an everyday social context (e.g., booking a hotel, joining a
+                  club)
+                </p>
+              </div>
+
+              <div class="part-card">
+                <h4>Section 2: Monologue</h4>
+                <p>A monologue in a social context (e.g., a speech about local facilities, a tour guide explaining a
+                  museum)</p>
+              </div>
+
+              <div class="part-card">
+                <h4>Section 3: Educational</h4>
+                <p>A conversation between up to four people in an educational context (e.g., students discussing an
+                  assignment, tutor feedback)</p>
+              </div>
+
+              <div class="part-card">
+                <h4>Section 4: Academic Lecture</h4>
+                <p>A monologue on an academic subject (e.g., university lecture on environmental science)</p>
+              </div>
+            </div>
+
+            <div class="tip-box">
+              <i class="fas fa-lightbulb"></i>
+              <strong>Pro Tip:</strong> Use the 10-minute transfer time wisely - double-check spelling and grammar as
+              incorrect spelling results in lost marks.
+            </div>
+          </div>
+
+          <h3>Question Types & Strategies</h3>
+
+          <div class="question-types">
+            <div class="question-type">
+              <h4>Form Completion</h4>
+              <p>Fill in gaps in forms, notes, tables or flow-charts.</p>
+              <div class="example">
+                <p><strong>Audio:</strong> "The library opens at 9:00 am on weekdays and 10:00 am on weekends."</p>
+                <p><strong>Form:</strong> Opening hours: Weekdays: 9:00 am, Weekends: ______</p>
+                <p><strong>Answer:</strong> 10:00 am</p>
+              </div>
+              <div class="tip-box">
+                <i class="fas fa-tips"></i>
+                Focus on dates, times, prices, and proper nouns which are often answers
+              </div>
+            </div>
+
+            <div class="question-type">
+              <h4>Multiple Choice</h4>
+              <p>Choose the correct answer from options A, B, or C.</p>
+              <div class="example">
+                <p><strong>Audio:</strong> "The museum's most popular exhibit is the dinosaur skeleton collection."</p>
+                <p><strong>Question:</strong> What is the most popular exhibit?<br>
+                  A) Ancient pottery<br>
+                  B) Dinosaur skeletons<br>
+                  C) Space exploration</p>
+                <p><strong>Answer:</strong> B</p>
+              </div>
+              <div class="tip-box">
+                <i class="fas fa-tips"></i>
+                Listen for paraphrases - the audio may say "most popular" while the question says "most visited"
+              </div>
+            </div>
+
+            <div class="question-type">
+              <h4>Map Labeling</h4>
+              <p>Label locations on a map or diagram.</p>
+              <div class="example">
+                <p><strong>Audio:</strong> "As you enter the park, the playground is on your left, and the café is
+                  straight ahead next to the fountain."</p>
+                <p><strong>Question:</strong> Label the café on the map</p>
+              </div>
+              <div class="tip-box">
+                <i class="fas fa-tips"></i>
+                Pay attention to direction words: left, right, straight ahead, opposite, next to
+              </div>
+            </div>
+
+            <div class="question-type">
+              <h4>Sentence Completion</h4>
+              <p>Complete sentences with words from the audio.</p>
+              <div class="example">
+                <p><strong>Audio:</strong> "Students must submit their assignments by Friday at the latest."</p>
+                <p><strong>Sentence:</strong> The deadline for assignments is ______.</p>
+                <p><strong>Answer:</strong> Friday</p>
+              </div>
+              <div class="tip-box">
+                <i class="fas fa-tips"></i>
+                Predict the type of word needed (noun, verb, adjective) before listening
+              </div>
+            </div>
+          </div>
+
+          <h3>Practice Audio Sample</h3>
+          <div class="audio-sample">
+            <p><strong>Section 2: Museum Tour Introduction</strong></p>
+            <p>Listen to the tour guide and answer the questions below:</p>
+
+            <div class="audio-controls">
+              <div class="audio-btn">
+                <i class="fas fa-play"></i>
+              </div>
+              <div class="audio-btn">
+                <i class="fas fa-pause"></i>
+              </div>
+              <div class="audio-btn">
+                <i class="fas fa-redo"></i>
+              </div>
+            </div>
+
+            <div class="structure" style="margin-top: 20px;">
+              <p><strong>Questions:</strong></p>
+              <p>1. The museum was founded in ______</p>
+              <p>2. The most valuable exhibit is the ______ collection</p>
+              <p>3. Photography is allowed except in the ______ room</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Time Management Strategy</h3>
+            <div class="structure">
+              <p><strong>Before each section:</strong> Use the 30 seconds to read questions and underline keywords</p>
+              <p><strong>During listening:</strong> Write answers directly on the question paper</p>
+              <p><strong>After each section:</strong> Quickly check answers while you have 30 seconds</p>
+              <p><strong>After all sections:</strong> Use 10 minutes to transfer and review answers</p>
+            </div>
+
+            <div class="tip-box">
+              <i class="fas fa-tips"></i>
+              <strong>Band 9 Hack:</strong> Practice listening at 1.25x speed to make the actual test seem slower
+            </div>
+          </div>
+
+          <h3>Common Pitfalls to Avoid</h3>
+          <table class="band-table">
+            <thead>
+              <tr>
+                <th>Pitfall</th>
+                <th>Solution</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Losing focus during monologues</td>
+                <td>Practice with longer lectures and take notes</td>
+              </tr>
+              <tr>
+                <td>Misspelling words</td>
+                <td>Learn common IELTS vocabulary with correct spelling</td>
+              </tr>
+              <tr>
+                <td>Getting stuck on missed answers</td>
+                <td>Move on immediately to avoid missing subsequent answers</td>
+              </tr>
+              <tr>
+                <td>Ignoring word limits</td>
+                <td>Always check instructions (e.g., "NO MORE THAN TWO WORDS")</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="resources">
+            <div class="resource-card">
+              <h4>Recommended Practice Materials</h4>
+              <ul>
+                <li>Cambridge IELTS Books 10-18</li>
+                <li>British Council Listening Exercises</li>
+                <li>IELTS Liz Listening Practice</li>
+                <li>Official IELTS Practice App</li>
+              </ul>
+            </div>
+
+            <div class="resource-card">
+              <h4>Listening Practice Sources</h4>
+              <ul>
+                <li>TED Talks (academic topics)</li>
+                <li>BBC 6 Minute English</li>
+                <li>IELTS Podcast</li>
+                <li>University lectures on YouTube</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="countdown">
+            <p>Regular listening practice is essential - aim for at least 30 minutes daily!</p>
+          </div>
+        </div>
+
+        <!-- Speaking Module Content -->
+        <div class="page" id="speaking-page">
+          <h2><i class="fas fa-microphone"></i> IELTS Speaking Module</h2>
+
+          <div class="card speaking">
+            <h3>Exam Structure Overview</h3>
+            <p>The IELTS Speaking test is an 11-14 minute face-to-face interview with an examiner. It consists of three
+              parts:</p>
+
+            <div class="part-container">
+              <div class="part-card">
+                <h4>Part 1: Introduction & Interview</h4>
+                <p><strong>Duration:</strong> 4-5 minutes</p>
+                <p>Answer questions about yourself, your home, work, studies, and familiar topics</p>
+              </div>
+
+              <div class="part-card">
+                <h4>Part 2: Long Turn</h4>
+                <p><strong>Duration:</strong> 3-4 minutes</p>
+                <p>Speak for 1-2 minutes on a given topic after 1 minute preparation time</p>
+              </div>
+
+              <div class="part-card">
+                <h4>Part 3: Discussion</h4>
+                <p><strong>Duration:</strong> 4-5 minutes</p>
+                <p>Discuss abstract ideas and issues related to the Part 2 topic</p>
+              </div>
+            </div>
+
+            <div class="tip-box">
+              <i class="fas fa-lightbulb"></i>
+              <strong>Scoring Criteria:</strong> Fluency & Coherence (25%), Lexical Resource (25%), Grammatical Range &
+              Accuracy (25%), Pronunciation (25%)
+            </div>
+          </div>
+
+          <h3>Part 1: Introduction & Interview</h3>
+          <div class="card">
+            <h4>Common Topics</h4>
+            <ul class="topic-list">
+              <li>Work or Studies</li>
+              <li>Hometown</li>
+              <li>Home & Accommodation</li>
+              <li>Family</li>
+              <li>Hobbies & Interests</li>
+              <li>Daily Routine</li>
+              <li>Food & Cooking</li>
+              <li>Weather & Seasons</li>
+              <li>Sports & Exercise</li>
+              <li>Music & Entertainment</li>
+            </ul>
+
+            <h4>Sample Questions</h4>
+            <div class="example">
+              <p><strong>Examiner:</strong> "Do you work or are you a student?"</p>
+              <p><strong>Candidate:</strong> "I'm currently a university student. I'm studying computer science at
+                Oxford
+                University."</p>
+              <p><strong>Examiner:</strong> "What do you like about your hometown?"</p>
+              <p><strong>Candidate:</strong> "Well, I come from Manchester, and what I particularly appreciate is its
+                vibrant cultural scene. There are numerous theaters, museums, and music venues that offer diverse
+                entertainment options throughout the year."</p>
+            </div>
+
+            <div class="tip-box">
+              <i class="fas fa-tips"></i>
+              Give extended answers (2-3 sentences) but don't speak for too long. Answer directly and then add one extra
+              piece of information.
+            </div>
+          </div>
+
+          <h3>Part 2: Long Turn</h3>
+          <div class="card">
+            <h4>Cue Card Structure</h4>
+            <div class="structure">
+              <p><strong>Topic:</strong> Describe a book you recently read</p>
+              <p><strong>You should say:</strong></p>
+              <ul>
+                <li>What the book is about</li>
+                <li>When you read it</li>
+                <li>Why you decided to read it</li>
+                <li>And explain how you felt about it</li>
+              </ul>
+            </div>
+
+            <h4>Preparation Strategy</h4>
+            <div class="structure">
+              <p><strong>0:00-0:20:</strong> Read the cue card and note keywords for each point</p>
+              <p><strong>0:20-0:40:</strong> Develop examples and specific details</p>
+              <p><strong>0:40-1:00:</strong> Plan your opening and closing sentences</p>
+            </div>
+
+            <h4>Speaking Framework</h4>
+            <div class="example">
+              <p><strong>Introduction:</strong> "I'd like to talk about 'Sapiens' by Yuval Noah Harari, which I read
+                last
+                month."</p>
+              <p><strong>Content:</strong> "The book explores human history... I decided to read it because... What
+                particularly fascinated me was..."</p>
+              <p><strong>Feelings:</strong> "I found it incredibly thought-provoking..."</p>
+              <p><strong>Conclusion:</strong> "Overall, it was one of the most enlightening books I've encountered."</p>
+            </div>
+
+            <div class="tip-box">
+              <i class="fas fa-tips"></i>
+              Use the 1-minute preparation time wisely - focus on content, not perfect grammar. Aim to speak for at
+              least
+              1 minute 30 seconds.
+            </div>
+          </div>
+
+          <h3>Part 3: Discussion</h3>
+          <div class="card">
+            <h4>Common Question Types</h4>
+            <div class="structure">
+              <p><strong>Comparing:</strong> "How has reading changed compared to the past?"</p>
+              <p><strong>Predicting:</strong> "What will be the future of printed books?"</p>
+              <p><strong>Analyzing:</strong> "Why do some people prefer fiction over non-fiction?"</p>
+              <p><strong>Evaluating:</strong> "How important is reading for children's development?"</p>
+            </div>
+
+            <h4>Answer Structure</h4>
+            <div class="example">
+              <p><strong>Opinion:</strong> "I believe reading habits have transformed significantly..."</p>
+              <p><strong>Reason:</strong> "This is largely due to technological advancements..."</p>
+              <p><strong>Example:</strong> "For instance, many people now read on their smartphones..."</p>
+              <p><strong>Alternative View:</strong> "However, some argue that traditional books offer..."</p>
+              <p><strong>Conclusion:</strong> "So while digital reading is convenient, print books retain unique value."
+              </p>
+            </div>
+
+            <div class="tip-box">
+              <i class="fas fa-tips"></i>
+              Use sophisticated language: "This phenomenon can be attributed to..." instead of "This happens because..."
+            </div>
+          </div>
+
+          <h3>Band 9 Speaking Tips</h3>
+          <div class="speaking-tips">
+            <div class="speaking-tip">
+              <h4>Fluency & Coherence</h4>
+              <ul>
+                <li>Use linking words: moreover, however, consequently</li>
+                <li>Answer directly then expand</li>
+                <li>Use fillers naturally: "That's an interesting question..."</li>
+              </ul>
+            </div>
+
+            <div class="speaking-tip">
+              <h4>Lexical Resource</h4>
+              <ul>
+                <li>Use topic-specific vocabulary</li>
+                <li>Employ idiomatic language appropriately</li>
+                <li>Show range with synonyms</li>
+              </ul>
+            </div>
+
+            <div class="speaking-tip">
+              <h4>Grammar Range</h4>
+              <ul>
+                <li>Mix simple and complex sentences</li>
+                <li>Use a variety of tenses</li>
+                <li>Include conditional sentences</li>
+              </ul>
+            </div>
+
+            <div class="speaking-tip">
+              <h4>Pronunciation</h4>
+              <ul>
+                <li>Focus on word stress and sentence rhythm</li>
+                <li>Use intonation to convey meaning</li>
+                <li>Don't worry about accent - focus on clarity</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3>Practice Resources</h3>
+          <div class="resources">
+            <div class="resource-card">
+              <h4>Self-Practice Techniques</h4>
+              <ul>
+                <li>Record yourself and analyze</li>
+                <li>Practice with sample cue cards</li>
+                <li>Think in English daily</li>
+                <li>Join English speaking clubs</li>
+              </ul>
+            </div>
+
+            <div class="resource-card">
+              <h4>Recommended Materials</h4>
+              <ul>
+                <li>Cambridge IELTS Speaking Tests</li>
+                <li>IELTS Liz Speaking Practice</li>
+                <li>IELTS Speaking Podcast</li>
+                <li>BBC Learning English</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="countdown">
+            <p>Remember: The examiner wants you to succeed! Be confident, be yourself, and show your language ability.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-section">
+              <figure class="logoimg">
+                <img src="Images\IELTS (2).png" alt="my img">
+              </figure>
+              <p style="text-align-last: auto;">Your trusted partner for personalized IELTS coaching with proven
+                one-on-one methodology.</p>
+            </div>
+            <div class="footer-section">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ielts-learning.html">IELTS Learning</a></li>
+                <li><a href="one-on-one-methodology.html">One-on-One Teaching</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="notes.html">Notes</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Contact Info</h4>
+              <p><i class="fas fa-phone"></i> +92-324-6078999</p>
+              <p><i class="fas fa-envelope"></i> info@ieltslahore.com</p>
+              <p><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</p>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2020 IELTS Lahore. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- WhatsApp Button -->
+      <div class="whatsapp-float" onclick="openWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+      </div>
+
+      <!-- Phone Call Button -->
+      <div class="phone-call-button" id="phoneCallButton">
+        <a href="tel:+923346078999">
+          <img src="Images\callicon.png" alt="Phone Icon" />
+        </a>
+      </div>
+
+      <script src="main.js"></script>
+    </div>
+  </div>
+
+  <script>
+    // Tab switching functionality
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        document.querySelectorAll('.tab').forEach(t => {
+          t.classList.remove('active');
+        });
+
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Hide all pages
+        document.querySelectorAll('.page').forEach(page => {
+          page.classList.remove('active');
+        });
+
+        // Show corresponding page
+        const pageId = `${tab.dataset.tab}-page`;
+        document.getElementById(pageId).classList.add('active');
+      });
+    });
+
+    // Audio button functionality
+    document.querySelectorAll('.audio-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const icon = this.querySelector('i');
+        if (icon.classList.contains('fa-play')) {
+          icon.classList.remove('fa-play');
+          icon.classList.add('fa-pause');
+          this.style.backgroundColor = '#e74c3c';
+        } else if (icon.classList.contains('fa-pause')) {
+          icon.classList.remove('fa-pause');
+          icon.classList.add('fa-play');
+          this.style.backgroundColor = '#3498db';
+        } else if (icon.classList.contains('fa-redo')) {
+          const playBtn = this.closest('.audio-controls').querySelector('.fa-play');
+          if (playBtn) {
+            playBtn.parentElement.style.backgroundColor = '#3498db';
+          }
+        }
+      });
+    });
+
+    // Print button functionality
+    document.querySelector('.btn:nth-child(2)').addEventListener('click', () => {
+      window.print();
+    });
+  </script>
+</body>
+
+</html>
